@@ -1,0 +1,40 @@
+.reveal {
+  font-family: 'Helvetica Neue', 'Segoe UI', 'Hiragino Sans GB',
+    'Microsoft YaHei', sans-serif;
+}
+
+#avatar {
+  width: 230px;
+  height: 230px;
+  border: 0px solid #67949d;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.reveal h2 {
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.6em;
+}
+.reveal h3 {
+  font-size: 1em;
+  margin-bottom: 1.2em;
+}
+.reveal h6 {
+  font-size: 0.8em;
+}
+.reveal p {
+  font-size: 0.6em;
+  color: darkgrey;
+}
+.reveal p span {
+  color: #e7ad52;
+}
+.reveal ul li {
+  font-size: 0.5em;
+  margin-bottom: 0.3em;
+}
+.reveal ol li {
+  font-size: 0.6em;
+}
