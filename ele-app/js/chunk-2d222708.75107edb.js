@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d222708"],{cf2a:function(e,n,t){"use strict";t.r(n);var c=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[e._v("order")])},r=[],u={},a=u,o=t("2877"),s=Object(o["a"])(a,c,r,!1,null,"30101f3f",null);n["default"]=s.exports}}]);
+//# sourceMappingURL=chunk-2d222708.75107edb.js.map
