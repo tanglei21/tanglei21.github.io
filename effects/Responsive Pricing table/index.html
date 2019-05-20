@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>自适应购物选项卡片</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #2c3e50;
+      }
+      .pricing-table {
+        max-width: 1000px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+      }
+      .col {
+        box-sizing: border-box;
+        padding: 10px;
+        max-width: 320px;
+        flex: 25%;
+      }
+      .table {
+        background: #fff;
+        padding: 40px 20px;
+        font-family: sans-serif;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 10px #000;
+      }
+      .table h2 {
+        text-transform: uppercase;
+      }
+      .table ul {
+        margin: 0;
+        padding: 0;
+      }
+      .table ul li {
+        padding: 10px 0;
+        list-style: none;
+      }
+      .price {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+      .price span {
+        display: block;
+        font-size: 14px;
+      }
+      .table a {
+        text-decoration: none;
+        color: #2c3e50;
+        border: 2px solid #2c3e50;
+        display: block;
+        padding: 10px 0;
+        margin: 10px 0;
+        border-radius: 40px;
+        text-transform: uppercase;
+        font-size: 14px;
+        transition: 0.5s linear;
+      }
+      .table a:hover {
+        background: #2c3e50;
+        color: #fff;
+      }
+      .pop {
+        background: #2c3e50;
+        color: #fff;
+        transform: rotate(45deg);
+        padding: 10px 40px;
+        position: absolute;
+        top: 15px;
+        right: -35px;
+      }
+      @media screen and (max-width: 980px) {
+        .col {
+          flex: 50%;
+        }
+      }
+      @media screen and (max-width: 700px) {
+        .col {
+          flex: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pricing-table">
+      <div class="col">
+        <div class="table">
+          <h2>Regular</h2>
+          <div class="price">
+            $10
+            <span>Per Month</span>
+          </div>
+          <ul>
+            <li><strong>2</strong> Websites</li>
+            <li><strong>10</strong> Emails</li>
+            <li><strong>100 GB</strong> Storage</li>
+            <li><strong>1</strong> Account</li>
+          </ul>
+          <a href="">Buy Now</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="table">
+          <h2>Pro pack</h2>
+          <div class="pop">Popular</div>
+          <div class="price">
+            $15
+            <span>Per Month</span>
+          </div>
+          <ul>
+            <li><strong>3</strong> Websites</li>
+            <li><strong>15</strong> Emails</li>
+            <li><strong>200 GB</strong> Storage</li>
+            <li><strong>1</strong> Account</li>
+          </ul>
+          <a href="">Buy Now</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="table">
+          <h2>Premium</h2>
+          <div class="price">
+            $20
+            <span>Per Month</span>
+          </div>
+          <ul>
+            <li><strong>4</strong> Websites</li>
+            <li><strong>20</strong> Emails</li>
+            <li><strong>300 GB</strong> Storage</li>
+            <li><strong>2</strong> Account</li>
+          </ul>
+          <a href="">Buy Now</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="table">
+          <h2>Ultimate</h2>
+          <div class="price">
+            $25
+            <span>Per Month</span>
+          </div>
+          <ul>
+            <li><strong>6</strong> Websites</li>
+            <li><strong>20</strong> Emails</li>
+            <li><strong>500 GB</strong> Storage</li>
+            <li><strong>3</strong> Account</li>
+          </ul>
+          <a href="">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

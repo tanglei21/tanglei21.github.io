@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>前端特效</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrap {
+        width: 75%;
+        padding: 4rem 0;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h1 {
+        color: #474e51;
+        font-size: 2.6rem;
+        font-weight: 700;
+      }
+      .list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .list ul li {
+        margin-bottom: 2rem;
+        list-style-type: none;
+      }
+      .list ul li a {
+        color: #474e51;
+        text-decoration: none;
+        font-size: 1.5rem;
+      }
+      .borderLeftRight {
+        /* display: inline-block; */
+        position: relative;
+        color: #474e51;
+      }
+
+      .borderLeftRight::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #5878f3;
+        transform-origin: bottom right;
+        transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+      }
+
+      .borderLeftRight:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>前端特效</h1>
+    </div>
+    <div class="list">
+      <ul>
+        <li class="borderLeftRight">
+          <a href="./Responsive Product Card/index.html">自适应选项卡</a>
+        </li>
+        <li class="borderLeftRight">
+          <a href="./Responsive Pricing table/index.html">自适应产品页</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
